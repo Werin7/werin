@@ -14,6 +14,7 @@ body {
 .container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .landmark {
@@ -79,6 +80,12 @@ body {
 							<a
 								href="<c:url value='/jejupage?landmarkName=${landmark.landmarkinfo_name}'/>">
 								<img src="${landmark.landmarkinfo_pic}" alt="랜드마크 이미지">
+							</a>
+						</c:if>
+						<c:if test="${empty landmark.landmarkinfo_pic}">
+							<a
+								href="<c:url value='/jejupage?landmarkName=${landmark.landmarkinfo_name}'/>">
+								<img src="${pageContext.request.contextPath}/resources/img/로고.png" alt="대체 이미지">
 							</a>
 						</c:if>
 					</div>

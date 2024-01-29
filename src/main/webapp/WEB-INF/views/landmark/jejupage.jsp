@@ -98,6 +98,5 @@ hr {
 	</div>
 
 	<hr>
-	불러오기 성공
 </body>
 </html>
