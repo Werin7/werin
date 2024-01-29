@@ -96,7 +96,7 @@ ${searching}에 대한 검색 결과입니다
 
 <c:if test="${result == 1}">
 <div id="result_none">
-${searching}에 대한 검색 결과가 없습니다
+검색 결과가 없습니다
 </div>
 </c:if>
 
